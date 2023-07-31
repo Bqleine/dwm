@@ -35,7 +35,8 @@ static const Rule rules[] = {
 	{ NULL,         NULL,       NULL,       0,            False,       -1 },
 	{ "Processing", NULL,       NULL,       0,            True,        -1 },
         { "My Paint",   NULL,       NULL,       0,            True,        -1 },
-        { "My RPG",   NULL,       NULL,       0,            True,        -1 },
+        { "My RPG",     NULL,       NULL,       0,            True,        -1 },
+        { "feh",        NULL,       NULL,       0,            True,        -1 },
 };
 
 /* layout(s) */
@@ -156,4 +157,3 @@ static Button buttons[] = {
 	{ ClkTagBar,            MODKEY,         Button1,        tag,            {0} },
 	{ ClkTagBar,            MODKEY,         Button3,        toggletag,      {0} },
 };
-
