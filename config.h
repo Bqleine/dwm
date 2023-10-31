@@ -32,11 +32,11 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class        instance    title       tags mask     isfloating   monitor */
-	{ NULL,         NULL,       NULL,       0,            False,       -1 },
 	{ "Processing", NULL,       NULL,       0,            True,        -1 },
         { "My Paint",   NULL,       NULL,       0,            True,        -1 },
         { "My RPG",     NULL,       NULL,       0,            True,        -1 },
         { "feh",        NULL,       NULL,       0,            True,        -1 },
+	{ "rviz2",      NULL,       NULL,       4,            False,       -1 },
 };
 
 /* layout(s) */
@@ -79,7 +79,7 @@ static const char *audiopreviouscmd[] = { "playerctl", "previous", NULL };
 static const char *audiostopcmd[] = { "playerctl", "stop", NULL };
 
 #define SCROTUPLOADER "/mnt/john/home/Code/screenshot_uploader.py $f"
-static const char *scrotuploadcmd[] = { "scrot", "-s", "-o", "-F", "/tmp/scrot.png", "-e", SCROTUPLOADER };
+static const char *scrotuploadcmd[] = { "scrot", "-s", "-o", "-F", "/tmp/scrot.png", "-e", SCROTUPLOADER, NULL };
 
 static const char *emacsclientcmd[] = { "emacsclient", "-c", "-a", "", NULL };
 
