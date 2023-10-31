@@ -81,6 +81,8 @@ static const char *audiostopcmd[] = { "playerctl", "stop", NULL };
 #define SCROTUPLOADER "/mnt/john/home/Code/screenshot_uploader.py $f"
 static const char *scrotuploadcmd[] = { "scrot", "-s", "-o", "-F", "/tmp/scrot.png", "-e", SCROTUPLOADER };
 
+static const char *emacsclientcmd[] = { "emacsclient", "-c", "-a", "", NULL };
+
 static const char *uskb[] = { "setxkbmap", "us", NULL };
 static const char *frkb[] = { "setxkbmap", "fr", NULL };
 
@@ -103,6 +105,7 @@ static Key keys[] = {
 	/* { NULL,                         XK_Print,  spawn,          {.v = scrotcmd } }, */
 	/* { MODKEY|ShiftMask,             XK_Print,  spawn,          {.v = scrotucmd } }, */
 	/* { ShiftMask,                    XK_Print,  spawn,          {.v = fscrotucmd } }, */
+	{ MODKEY,                       XK_e,      spawn,          {.v = emacsclientcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
